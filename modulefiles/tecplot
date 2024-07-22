@@ -1,0 +1,13 @@
+#%Module1.0
+
+proc ModulesHelp { } {
+	global version
+}
+
+module-whatis	"Tecplot: CFD Visualization"
+
+prepend-path PATH /usr/local/install/tecplot/360ex_2022r1/bin
+prepend-path LD_LIBRARY_PATH /usr/local/install/tecplot/360ex_2022r1/lib
+
+setenv TECPLOT_PATH /usr/local/install/tecplot/360ex_2022r1
+

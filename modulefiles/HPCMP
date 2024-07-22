@@ -1,0 +1,13 @@
+#%Module1.0
+
+proc ModulesHelp { } {
+	global version
+}
+
+module-whatis	"HPCMP Kerberos and openssh"
+
+prepend-path PATH /usr/local/install/ossh/bin
+prepend-path PATH /usr/local/install/krb5/bin
+prepend-path LD_LIBRARY_PATH /usr/local/install/ossh/lib
+prepend-path LD_LIBRARY_PATH /usr/local/install/krb5/lib
+setenv KRB5_CONFIG /usr/local/install/krb5/etc/krb5.conf

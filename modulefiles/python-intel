@@ -1,0 +1,21 @@
+#%Module1.0
+
+proc ModulesHelp { } {
+	global version
+}
+
+module-whatis	"Intel Python distrubition"
+
+module load intel/2023.1.0
+
+set DIR /opt/intel/oneapi/intelpython/latest
+
+prepend-path PATH $DIR/bin
+prepend-path PATH $DIR/condabin
+
+setenv CONDA_DEFAULT_ENV intelpython-python3.9
+setenv CONDA_PYTHON_EXE $DIR/bin/python
+prepend-path PYTHONPATH /opt/intel/oneapi/advisor/2023.1.0/pythonapi
+setenv CONDA_EXE $DIR/conda
+
+setenv MKLROOT /opt/intel/oneapi/mkl

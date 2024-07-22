@@ -1,0 +1,12 @@
+#%Module1.0
+
+proc ModulesHelp { } {
+	global version
+}
+
+module-whatis	"Fieldview: CFD Visualization"
+setenv FV_DPI 600
+setenv FV_MP4_COMPRESSION_FACTOR 0
+prepend-path PATH /usr/local/install/fv/bin
+prepend-path LD_LIBRARY_PATH /usrr/local/install/fv/lib
+

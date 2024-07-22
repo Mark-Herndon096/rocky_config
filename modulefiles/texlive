@@ -1,0 +1,9 @@
+#%Module1.0
+
+proc ModulesHelp { } {
+	global version
+}
+
+module-whatis	"LaTeX texlive distribution"
+
+prepend-path PATH /usr/local/texlive/2023/bin/x86_64-linux/

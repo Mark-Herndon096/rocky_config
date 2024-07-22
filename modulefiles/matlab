@@ -1,0 +1,13 @@
+#%Module1.0
+
+proc ModulesHelp { } {
+	global version
+}
+
+module-whatis	"MATLAB R2023b"
+
+prepend-path PATH /usr/local/install/MATLAB/R2023b/bin
+prepend-path MATLAB_PATH /usr/loca/install/MATLAB/R2023b
+prepend-path LD_PRELOAD /home/herndonm/C/GCC/lib64/libstdc++.so.6
+prepend-path LD_LIBRARY_PATH /usr/lib64/xorg/modules/drivers
+
